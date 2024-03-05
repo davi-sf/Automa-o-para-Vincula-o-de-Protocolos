@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Solicitação</title>
+    <link rel="icon" href="icon-neo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo gg-comment"></div>
+        <div class="titulo">Registro de conclusão</div>
+        <form id="solicitacaoForm">
+            <div class="usuario">
+                <div class="input-box">
+                    <span class="detalhes">Nome</span>
+                    <input type="text" id="nomeCliente" placeholder="Insira nome do cliente">
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">Telefone</span>
+                    <input type="text" id="telefoneCliente" placeholder="Insira o telefone do cliente">
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">Código</span>
+                    <input type="text" id="codigoCliente" placeholder="Insira codigo do cliente">
+                </div>
+                <div class="input-box">
+                    <span class="detalhes">E-mail</span>
+                    <input type="text" id="emailCliente" placeholder="Insira E-mail do cliente">
+                </div>
+                <div class="input-box custom-select">
+                    <span class="detalhes">Motivo</span>
+                    <select id="opcao">
+                        <option value="OCORRENCIA TECNICA - NOTA EM ABERTO">Ocorrência Técnica - Nota em Aberto</option>
+                        <option value="FALTA DE ENERGIA INDIVIDUAL">Falta de Energia Individual</option>
+                        <option value="FALTA DE ENERGIA GERAL - SEM MOTIVO">Falta de Energia Geral - Sem Motivo</option>
+                        <option value="FALTA DE ENERGIA GERAL - TRANSFORMADOR">Falta de Energia Geral - Estouro de
+                            Transformador</option>
+                        <option value="RELIGACAO GERAR">Religação - Gerar</option>
+                        <option value="Acompanhamento de Religação">Acompanhamento de Religação</option>
+                        <option value="EM ABERTO">Em Aberto</option>
+                        <option value="2 VIA NAO ENVIADO">2 Via - Não Enviado</option>
+                        <option value="CODIGO DE BARRAS">Código de Barras</option>
+                        <option value="CONSULTA DE DEBITOS">Consulta de Débitos</option>
+                        <option value="ANALISE DE FATURAMENTO">Análise de Faturamento</option>
+                        <option value="PARCELAMENTO REALIZADO">Parcelamento Realizado</option>
+                        <option value="NAO E TITULAR">Não é Titular</option>
+                        <option value="ENTRADA NAO CHEGOU">Entrada Não Chegou</option>
+                        <option value="FIO PARTIDO">Fio Partido</option>
+                        <option value="DIVERSOS">Diversos</option>
+
+                    </select>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkboxNome" class="custom-checkbox" checked>
+                    <label for="checkboxNome" class="obs-label">Incluir Nome</label>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkboxTelefone" class="custom-checkbox" checked>
+                    <label for="checkboxTelefone" class="obs-label">Incluir Telefone</label>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkboxCodigo" class="custom-checkbox" checked>
+                    <label for="checkboxCodigo" class="obs-label">Incluir Código do Cliente</label>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkboxMotivo" class="custom-checkbox" checked>
+                    <label for="checkboxMotivo" class="obs-label">Incluir Motivo</label>
+                </div>
+
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkboxEmail" class="custom-checkbox" checked>
+                    <label for="checkboxEmail" class="obs-label">Incluir E-mail do Cliente</label>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkboxObservacao" class="custom-checkbox">
+                    <label for="checkboxObservacao" class="obs-label">Adicionar Observação</label>
+                </div>
+
+                <div class="observacao">
+                    <textarea id="textoObservacao" rows="4" placeholder="Insira sua observação"></textarea>
+                </div>
+
+                <div class="button-container">
+                    <button type="button" id="gerarTexto">Gerar Texto</button>
+                    <button type="button" id="limparFormulario">Limpar</button>
+                    <button type="button" id="copiarTexto">Copiar Texto</button>
+                </div>
+                
+            </div>
+        </form>
+
+        <div class="input-box">
+            <textarea id="textoGerado" rows="6" placeholder="Texto gerado aparecerá aqui" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

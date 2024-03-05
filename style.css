@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #353933;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    width: 90%;
+    background-color: #FFF;
+    padding: 25px;
+    border-radius: 5px;
+    position: relative;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.container .titulo {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.usuario .input-box .detalhes {
+    display: block;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.usuario .input-box input,
+.input-box.custom-select select,
+.observacao textarea {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #353935;
+    color: #fff;
+    transition:  0.3s ease;
+}
+
+#textoGerado {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #353935;
+    resize: vertical;
+    display: none;
+    font-size: 14px;
+    color: #333;
+}
+
+#textoGerado.mostrar {
+    display: block;
+}
+
+.logo {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.gg-comment {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 20px;
+    height: 16px;
+    border: 2px solid;
+    border-bottom: 0;
+}
+
+.gg-comment::after,
+.gg-comment::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+}
+
+.gg-comment::before {
+    border: 2px solid;
+    border-top-color: transparent;
+    border-bottom-left-radius: 20px;
+    right: 4px;
+    bottom: -6px;
+    height: 6px;
+}
+
+.gg-comment::after {
+    height: 2px;
+    background: currentColor;
+    box-shadow: 0 4px 0 0;
+    left: 4px;
+    top: 4px;
+}
+
+h1 {
+    font-size: 25px;
+    position: relative;
+}
+
+.observacao {
+    display: none;
+    margin-top: 30px;
+}
+
+
+
+.checkbox-container {
+    margin-bottom: 10px;
+    
+}
+
+
+.button-container button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #353935;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+}
